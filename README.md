@@ -1,18 +1,18 @@
 # Credit Card Fraud Detection
 
-## 📌 Overview
+## Overview
 
 This project focuses on detecting fraudulent credit card transactions using machine learning on a highly imbalanced dataset. The objective is to build a model that can effectively identify fraud while maintaining a practical balance between false positives and false negatives.
 
 ---
 
-## ❗ Problem Statement
+## Problem Statement
 
 Credit card fraud detection is challenging due to extreme class imbalance (~0.17% fraud cases) and the high cost of misclassification. Traditional accuracy is not a reliable metric, making it necessary to evaluate models using precision, recall, and PR-AUC.
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 * Source: Kaggle Credit Card Fraud Detection dataset
 * Total Transactions: 284,807
@@ -25,7 +25,7 @@ Credit card fraud detection is challenging due to extreme class imbalance (~0.17
 
 ---
 
-## ⚙️ Approach
+## Approach
 
 ### 1. Data Preprocessing
 
@@ -49,18 +49,18 @@ Credit card fraud detection is challenging due to extreme class imbalance (~0.17
 
 ---
 
-## 📈 Results
+## Results
 
 | Method          | Recall | Precision | False Positives | Verdict          |
 | --------------- | ------ | --------- | --------------- | ---------------- |
 | Baseline (0.5)  | 0.64   | 0.83      | 13              | Too conservative |
-| Threshold (0.2) | 0.76   | 0.74      | 26              |   Best trade-off |
+| Threshold (0.2) | 0.76   | 0.74      | 26              | Best trade-off   |
 | Class Weight    | 0.92   | 0.06      | 1389            | Too aggressive   |
 | SMOTE           | 0.92   | 0.06      | 1458            | Similar issue    |
 
 ---
 
-## 🔍 Key Insights
+## Key Insights
 
 * Accuracy is misleading for highly imbalanced datasets
 * Threshold tuning can outperform more complex techniques
@@ -69,7 +69,7 @@ Credit card fraud detection is challenging due to extreme class imbalance (~0.17
 
 ---
 
-## 💼 Business Interpretation
+## Business Interpretation
 
 * False Negatives (missed fraud) result in direct financial loss
 * False Positives impact user experience and transaction flow
@@ -78,7 +78,7 @@ Credit card fraud detection is challenging due to extreme class imbalance (~0.17
 
 ---
 
-## 🚀 Future Work
+## Future Work
 
 * Implement real-time fraud detection pipeline
 * Experiment with advanced models (XGBoost, Neural Networks)
@@ -87,7 +87,7 @@ Credit card fraud detection is challenging due to extreme class imbalance (~0.17
 
 ---
 
-## ✅ Conclusion
+## Conclusion
 
 A simple Logistic Regression model combined with threshold tuning achieved the best balance between fraud detection and operational feasibility. This project highlights that model performance is not just about algorithms, but about aligning evaluation and decisions with real-world business objectives.
 
