@@ -29,7 +29,7 @@ Credit card fraud detection is challenging due to extreme class imbalance (~0.17
 
 ### 1. Data Preprocessing
 
-* Scaled `Amount` and `Time` using StandardScaler
+* Scaled Amount and Time using StandardScaler
 * Addressed extreme class imbalance
 
 ### 2. Baseline Model
